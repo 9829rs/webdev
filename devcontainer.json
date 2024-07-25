@@ -1,0 +1,15 @@
+{
+  "name": "Python and MySQL",
+  "dockerFile": "Dockerfile",
+  "customizations":
+   {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
+  },
+  "appPort": [
+    "ms-python.python",
+    "ms-mysql.mysql"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [3306]
+}

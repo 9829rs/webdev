@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Orders</h1>
+    <ul>
+        {% for order in orders %}
+            <li>Order ID: {{ order[0] }}, Item ID: {{ order[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
